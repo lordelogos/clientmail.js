@@ -1,0 +1,29 @@
+{
+  "name": "client-mail",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "lint": "tsc",
+    "release": "pnpm run build"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Paul Ehikhuemen",
+    "url": "https://github.com/lordelogos",
+    "email": "paulehiks@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "@types/react": "^18.2.18",
+    "tsup": "7.1.0",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "type-fest": "4.1.0"
+  }
+}
