@@ -14,7 +14,7 @@ It is on the roadmap to add more email providers. Contributions and suggestions 
 
 ## Installation
 
-1. Setup your account and connect to your email provider at ![https://clientmail.xyz]
+1. Setup your account and connect to your email provider at the [Clientmail homepage](https://clientmail.xyz)
 
 2. Add `client-mail` to your project using your preferred package manager:
 
