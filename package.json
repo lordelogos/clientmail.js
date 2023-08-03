@@ -1,14 +1,14 @@
 {
-  "name": "client-mail",
+  "name": "clientmail",
   "version": "0.0.0",
-  "description": "",
+  "description": "Clientmail is a package that allows you send emails directly from your client-side code in your javascript or typescript project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup",
     "lint": "tsc",
-    "release": "pnpm run build"
+    "release": "yarn build && npm publish"
   },
   "keywords": [],
   "author": {
@@ -18,8 +18,8 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^20.4.5",
-    "@types/react": "^18.2.18",
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.18",
     "tsup": "7.1.0",
     "typescript": "5.1.6"
   },
