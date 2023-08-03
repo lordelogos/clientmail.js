@@ -8,49 +8,52 @@ Client-mail is a package that allows you send emails directly from your client-s
 
 2. Add `client-mail` to your project using your preferred package manager:
 
-#### With Yarn
+   With Yarn
 
-```sh
-yarn add client-mail
-```
+   ```sh
+   yarn add client-mail
+   ```
 
-#### With Npm
+   With Npm
 
-```sh
-npm install client-mail
-```
+   ```sh
+   npm install client-mail
+   ```
 
-#### With Pnpm
+   With Pnpm
 
-```sh
-pnpm install client-mail
-```
+   ```sh
+   pnpm install client-mail
+   ```
 
 3. Create an instance of the ClientMail class and pass in your public key
 
-```js
-const clientMail = new ClientMail("rc_A1..");
-```
+   ```js
+   const clientMail = new ClientMail("rc_A1.."); //replace with your public key
+   ```
 
 4. Send your emails with your selected email service
 
-```js
-// Using resend [resend.com]
-const data = {
-  from: "Acme <onboarding@resend.dev>",
-  to: ["delivered@resend.dev"],
-  subject: "Hello World",
-  html: "<strong>Test mail from client-mail</strong>",
-};
+   ```js
+   // Using resend [resend.com]
 
-clientMail.resend(data);
-```
+   const data = {
+     from: "Acme <onboarding@resend.dev>",
+     to: ["delivered@resend.dev"],
+     subject: "Hello World",
+     html: "<strong>Test mail from client-mail</strong>",
+   };
+
+   clientMail.resend(data);
+   ```
 
 ## Plugins
 
 The main goal of this package is to provide a very lightweight solution while offering optional addons that you can easily opt-in and out of as needed. Client-mail comes with a plugin system to enables you to extend its functionality. Available plugins include:-
 
-- React Email Plugin: This plugin to enable you to send emails with templates built with react-email
+##### React Email Plugin:
+
+This plugin to enable you to send emails with templates built with react-email. You can check it out here:
 
 The available plugins are limited for now but there are more on the roadmap and suggestions are always welcome.
 
