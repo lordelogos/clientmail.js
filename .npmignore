@@ -1,0 +1,21 @@
+/node_modules
+
+# Ignore test-related files
+/__tests__
+/coverage.data
+/coverage/
+
+# src files
+/src
+
+# planning files
+/pre-planning
+
+# config files
+tsconfig.json
+tsup.config.ts
+jest.config.js
+yarn.lock
+
+# ci
+/.github
