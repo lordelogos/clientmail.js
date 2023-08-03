@@ -1,4 +1,6 @@
-# Client-mail
+<div align="center"><img src="https://github.com/lordelogos/clientmail.js/assets/67395687/d4a32333-b592-465d-a1ae-04d5954d204a" alt="client mail logo"></div>
+
+<div align="center"><h1>Client-mail</h1></div>
 
 Client-mail is a package that allows you send emails directly from your client-side code in your javascript or typescript project. You can easily integrate email functionality into your web applications without any need for server-side code or complicated overhead. The process of sending emails is all handled for you in a quick and reliable way.
 
@@ -51,7 +53,7 @@ Client-mail is a package that allows you send emails directly from your client-s
 
 The main goal of this package is to provide a very lightweight solution while offering optional addons that you can easily opt-in and out of as needed. Client-mail comes with a plugin system to enables you to extend its functionality. Available plugins include:-
 
-##### React Email Plugin:
+### [React Email Plugin]():
 
 This plugin to enable you to send emails with templates built with react-email. You can check it out here:
 
