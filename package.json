@@ -1,6 +1,6 @@
 {
-  "name": "clientmail",
-  "version": "0.0.0",
+  "name": "client-mail",
+  "version": "0.0.1",
   "description": "Clientmail is a package that allows you send emails directly from your client-side code in your javascript or typescript project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

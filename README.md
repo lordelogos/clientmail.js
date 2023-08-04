@@ -21,25 +21,25 @@ It is on the roadmap to add more email providers. Contributions and suggestions 
    With Yarn
 
    ```sh
-   yarn add clientmail
+   yarn add client-mail
    ```
 
    With Npm
 
    ```sh
-   npm install clientmail
+   npm install client-mail
    ```
 
    With Pnpm
 
    ```sh
-   pnpm install clientmail
+   pnpm install client-mail
    ```
 
 3. Create an instance of the ClientMail class and pass in your public key
 
    ```js
-   import { ClientMail } from "clientmail";
+   import { ClientMail } from "client-mail";
    const clientMail = new ClientMail("rc_A1.."); //replace with your public key
    ```
 
@@ -68,7 +68,7 @@ The available plugins are limited for now but there are more on the roadmap and 
 
 ## Contributing
 
-Contributions to `clientmail` are welcome! If you find a bug, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request. Please make sure to follow the existing coding style and conventions.
+Contributions to `client-mail` are welcome! If you find a bug, have suggestions for improvements, or want to add new features, feel free to open an issue or submit a pull request. Please make sure to follow the existing coding style and conventions.
 
 When submitting a pull request, provide a clear description of the changes made and ensure that all tests pass. Adding appropriate tests for new features or bug fixes is highly appreciated.
 
@@ -82,4 +82,4 @@ For bugs and feature requests, [please create an issue](https://github.com/REPLA
 
 ## License
 
-`clientmail` is licensed under the MIT License.
+`client-mail` is licensed under the MIT License.
