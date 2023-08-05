@@ -1,4 +1,4 @@
-<div align="center"><img src="https://github.com/lordelogos/clientmail.js/assets/67395687/d4a32333-b592-465d-a1ae-04d5954d204a" alt="client mail logo"></div>
+<div align="center"><img src="https://github.com/lordelogos/clientmail.js/assets/67395687/c7862e34-598f-4f1a-835d-f66be99677ea" alt="client mail logo"></div>
 
 <div align="center"><h1>Clientmail</h1></div>
 
