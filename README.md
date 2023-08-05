@@ -74,7 +74,7 @@ When submitting a pull request, provide a clear description of the changes made 
 
 ## Bugs and Feature Requests
 
-For bugs and feature requests, [please create an issue](https://github.com/REPLACE_ME/issues/new/choose).
+For bugs and feature requests, [please create an issue](https://github.com/lordelogos/clientmail.js/issues/new/choose).
 
 ## Author
 
