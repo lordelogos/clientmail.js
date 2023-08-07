@@ -5,6 +5,11 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "browser": "./dist/index.mjs"
+    }
+  },
   "scripts": {
     "build": "tsup",
     "build:browser": "tsup --format iife",
