@@ -77,3 +77,7 @@ export class ClientMail implements IClientMail {
     }
   }
 }
+
+if (typeof window !== "undefined") {
+  (window as any).ClientMail = ClientMail;
+}
