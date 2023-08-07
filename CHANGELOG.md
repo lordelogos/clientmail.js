@@ -1,5 +1,11 @@
 # client-mail
 
+## 0.0.3
+
+### Patch Changes
+
+- 796d28e: Setup package for use in browser environment
+
 ## 0.0.2
 
 ### Patch Changes
