@@ -9,6 +9,7 @@ Clientmail is a package that allows you send emails directly from your client-si
 Clientmail emables you to send emails from your client-side code by connecting your email services. For now, there is support for the following:
 
 - [Resend](https://resend.com)
+- [Plunk](https://useplunk.com)
 
 It is on the roadmap to add more email providers. Contributions and suggestions are always welcome.
 
@@ -56,6 +57,17 @@ It is on the roadmap to add more email providers. Contributions and suggestions 
    };
 
    clientMail.resend(data);
+
+   // Using plunk [useplunk.com]
+
+   const data = {
+     from: "Acme <onboarding@resend.dev>",
+     to: ["delivered@resend.dev"],
+     subject: "Hello World",
+     body: "<strong>Test mail from client-mail</strong>",
+   };
+
+   clientMail.plunk(data);
    ```
 
 ## Plugins
