@@ -45,3 +45,24 @@ export interface ResendEmailResponse {
     id: string;
   };
 }
+
+interface PlunkEmailBaseOptions {
+  name: string;
+  type?: "html" | "markdown";
+  from: string;
+  to: string | string[];
+  subject: string;
+  body?: string;
+  react?: React.ReactElement | React.ReactNode | null;
+}
+
+export type PlunkEmailOptions = RequireAtLeastOne<
+  PlunkEmailBaseOptions,
+  "react" | "body"
+>;
+
+export interface PlunkEmailResponse {
+  success: boolean;
+  emails: { contact: { id: string; email: string }; email: string }[];
+  timestamp: string;
+}

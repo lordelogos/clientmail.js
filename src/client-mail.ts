@@ -2,6 +2,8 @@ import { API_BASE_URL, USER_AGENT } from "./utils/constants";
 import {
   IClientMail,
   Plugins,
+  PlunkEmailOptions,
+  PlunkEmailResponse,
   ResendEmailOptions,
   ResendEmailResponse,
 } from "./utils/interfaces";
@@ -71,6 +73,50 @@ export class ClientMail implements IClientMail {
       }
 
       const responseData: ResendEmailResponse = await response.json();
+      return responseData;
+    } catch (err) {
+      throw err;
+    }
+  }
+
+  async plunk(data: PlunkEmailOptions) {
+    try {
+      const path = `${this.baseURL}/plunk`;
+
+      if (data.react) {
+        if (this.plugins.reactEmailAdapter) {
+          data.body = this.plugins.reactEmailAdapter.convertReactEmailToHtml(
+            data.react
+          );
+          delete data.react;
+        } else {
+          throw new Error(
+            "No React-email adapter provided, install '@client-mail/react-email' to use react-email templates"
+          );
+        }
+      }
+
+      const requestBody = {
+        from: data.from,
+        to: data.to,
+        body: data.body,
+        subject: data.subject,
+        name: data.name,
+        type: data.type,
+      };
+
+      const requestOptions = {
+        method: "POST",
+        headers: this.headers,
+        body: JSON.stringify(requestBody),
+      };
+
+      const response = await fetch(path, requestOptions);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      const responseData: PlunkEmailResponse = await response.json();
       return responseData;
     } catch (err) {
       throw err;

@@ -1,2 +1,7 @@
 export * from "./client-mail";
-export { ResendEmailOptions, ResendEmailResponse } from "./utils/interfaces";
+export {
+  ResendEmailOptions,
+  ResendEmailResponse,
+  PlunkEmailOptions,
+  PlunkEmailResponse,
+} from "./utils/interfaces";
