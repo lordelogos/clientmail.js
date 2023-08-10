@@ -1,5 +1,11 @@
 # client-mail
 
+## 0.1.0
+
+### Minor Changes
+
+- a82187f: Added Support for Plunk ([@UsePlunk](https://www.useplunk.com/))
+
 ## 0.0.3
 
 ### Patch Changes
