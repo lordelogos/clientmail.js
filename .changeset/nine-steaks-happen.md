@@ -2,4 +2,4 @@
 "client-mail": minor
 ---
 
-Added Support for Plunk (@useplunk)
+Added Support for Plunk ([@UsePlunk](https://www.useplunk.com/))
