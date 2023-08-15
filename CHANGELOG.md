@@ -1,5 +1,14 @@
 # client-mail
 
+## 0.1.1
+
+### Patch Changes
+
+- e6bbfb9: Fixes:
+
+  - Updated the export types for client-mail
+  - Updated Homepage url for NPM
+
 ## 0.1.0
 
 ### Minor Changes
