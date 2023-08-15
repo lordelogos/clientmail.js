@@ -7,12 +7,22 @@
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "browser": "./dist/index.mjs"
+      "browser": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
     }
   },
   "scripts": {
     "build": "tsup",
-    "build:browser": "tsup --format iife",
     "lint": "tsc",
     "release": "pnpm run build && changeset publish"
   },
@@ -22,6 +32,7 @@
     "url": "https://github.com/lordelogos",
     "email": "paulehiks@gmail.com"
   },
+  "homepage": "https://clientmail.xyz",
   "repository": {
     "type": "git",
     "url": "https://github.com/lordelogos/clientmail.js.git"
